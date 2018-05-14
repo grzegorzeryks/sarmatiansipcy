@@ -54,6 +54,19 @@ nav {
   text-decoration: none;
   margin-left: 1em;
 }
+.header-menu  a:hover {
+  color: rgb(209, 60, 60);
+}
+
+/* .header-menu a:hover:after {
+  transition: all 2s;
+    content: url(../img/pepicon.png);
+    background-size: contain;
+    display: block;
+    position: absolute;
+    margin-left: 20px;
+
+} */
 
 .main {
   border: 3px dashed rgb(237, 115, 115);
