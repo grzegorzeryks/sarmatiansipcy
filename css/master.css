@@ -34,6 +34,10 @@ nav {
   float: left;
   margin-top: -50px;
   margin-left: -37px;
+  transition: all 3s;
+}
+.logo:hover{
+  transform: rotate(-15deg);
 }
 
 .header-menu {
