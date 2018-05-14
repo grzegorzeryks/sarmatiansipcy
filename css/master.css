@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: rgb(209, 60, 60);
+}
+
+nav {
+  height: 10vh;
+}
+
+.wrap {
+  background-color: white;
+  width: 1160px;
+  height: 100vh;
+  margin: 73px auto;
+}
+
+.logo {
+  height: 183px;
+  width: 338px;
+  background: url(../img/sspice.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin-top: -50px;
+  margin-left: -37px;
+}
+
+.header-menu {
+  list-style: none;
+  text-transform: uppercase;
+  float: right;
+  padding: 40px;
+}
+
+.header-menu li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header-menu li a {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+.main {
+  border: 3px dashed rgb(237, 115, 115);
+  margin: 73px 30px;
+  height: 76vh;
+}
+
+footer {
+  background-color: black;
+  height: 9vh;
+  width: 100%;
+}
