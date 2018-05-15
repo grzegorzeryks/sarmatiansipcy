@@ -18,6 +18,19 @@ nav {
   height: 10vh;
 }
 
+/* .pepper {
+  display:block;
+  background: url(../img/pepicon.png);
+  width:80px;
+  height:80px;
+  position:absolute;
+  right: 250px;
+}
+
+.pepper-move-1{
+
+} */
+
 .wrap {
   background-color: white;
   width: 1160px;
@@ -36,7 +49,21 @@ nav {
   margin-left: -37px;
   transition: all 3s;
 }
-.logo:hover{
+
+.logo-move {
+  animation: logoMv 2s infinite ease-in-out;
+}
+
+@keyframes logoMv {
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.logo:hover {
   transform: rotate(-15deg);
 }
 
@@ -44,7 +71,7 @@ nav {
   list-style: none;
   text-transform: uppercase;
   float: right;
-  padding: 40px;
+  padding: 48px;
 }
 
 .header-menu li {
@@ -58,7 +85,8 @@ nav {
   text-decoration: none;
   margin-left: 1em;
 }
-.header-menu  a:hover {
+
+.header-menu a:hover {
   color: rgb(209, 60, 60);
 }
 
