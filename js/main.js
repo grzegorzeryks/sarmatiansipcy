@@ -30,8 +30,33 @@ function peperOut() {
   logo.classList.remove('logo-move');
 }
 
-// checking if use has scrolled to the bottom of the page
-window.onscroll = function() {
+
+// window.onscroll = function() {
+//   let pageHeight = document.documentElement.offsetHeight,
+//     windowHeight = window.innerHeight,
+//     scrollPosition = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
+//   if (pageHeight <= windowHeight + scrollPosition) {
+//     footer.style.bottom = '0px';
+//   } else {
+//     footer.style.bottom = '-90px';
+//   }
+// };
+
+//upper menu change
+
+let main = document.querySelector('.main')
+let menuChange = main.offsetTop;
+console.log(main);
+console.log(menuChange);
+
+// checking if user has scrolled past navbar
+window.onscroll = function () {
+  if (window.pageYOffset >= menuChange) {
+    menuUl.classList.add('header-small');
+  } else {
+    menuUl.classList.remove('header-small');
+  }
+// checking if user has scrolled to the bottom of the page
   let pageHeight = document.documentElement.offsetHeight,
     windowHeight = window.innerHeight,
     scrollPosition = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
@@ -40,4 +65,7 @@ window.onscroll = function() {
   } else {
     footer.style.bottom = '-90px';
   }
+
+
+
 };
