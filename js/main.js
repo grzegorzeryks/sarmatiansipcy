@@ -18,7 +18,7 @@ function footerShow() {
   if (footer.style.bottom != '0px') {
     footer.style.bottom = '0px';
   } else {
-    footer.style.bottom = '-68px';
+    footer.style.bottom = '-90px';
   }
 }
 
