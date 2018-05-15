@@ -31,20 +31,9 @@ function peperOut() {
 }
 
 
-// window.onscroll = function() {
-//   let pageHeight = document.documentElement.offsetHeight,
-//     windowHeight = window.innerHeight,
-//     scrollPosition = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
-//   if (pageHeight <= windowHeight + scrollPosition) {
-//     footer.style.bottom = '0px';
-//   } else {
-//     footer.style.bottom = '-90px';
-//   }
-// };
 
-//upper menu change
 
-let main = document.querySelector('.main')
+let main = document.querySelector('.main');
 let menuChange = main.offsetTop;
 console.log(main);
 console.log(menuChange);
@@ -65,7 +54,5 @@ window.onscroll = function () {
   } else {
     footer.style.bottom = '-90px';
   }
-
-
 
 };
