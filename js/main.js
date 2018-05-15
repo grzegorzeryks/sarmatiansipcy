@@ -35,14 +35,9 @@ window.onscroll = function() {
   let pageHeight = document.documentElement.offsetHeight,
     windowHeight = window.innerHeight,
     scrollPosition = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
-
-
-
-
   if (pageHeight <= windowHeight + scrollPosition) {
     footer.style.bottom = '0px';
-  }
-  else {
+  } else {
     footer.style.bottom = '-90px';
   }
 };
