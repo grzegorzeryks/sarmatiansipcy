@@ -186,6 +186,7 @@ footer {
   position: fixed;
   bottom: -100px;
   transition: all 1s;
+  display:flex;
 }
 
 .footer-arrow {
