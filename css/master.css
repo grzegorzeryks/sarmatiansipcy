@@ -36,6 +36,7 @@ nav {
   width: 1160px;
   height: 100%;
   margin: 73px auto;
+  border-radius: 10px;
 }
 
 /* NAV */
@@ -73,9 +74,9 @@ nav {
   list-style: none;
   text-transform: uppercase;
   float: right;
-  padding: 48px;
+  padding-right: 148px;
   transition: all 0.5s;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .header-small {
@@ -84,17 +85,33 @@ nav {
   list-style: none;
   text-transform: uppercase;
   position: fixed;
-  top: -23px;
+  top: -43px;
   /* border: 2px dashed rgb(219, 158, 145); */
   background: white;
   font-size: 1.3rem;
   font-weight: 200;
 }
 
+.header-small::before {
+  content: '';
+  background-color: white;
+  background-image: url(../img/logo_small.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-left: -49px;
+  margin-top: 6px;
+  width: 55px;
+  height: 55px;
+  border: 3px solid white;
+  animation: logoMv 6s infinite;
+}
+
 .header-menu li {
   display: inline-block;
   text-decoration: none;
-
 }
 
 .header-menu li a {
@@ -107,13 +124,12 @@ nav {
 .header-menu a:hover {
   color: rgb(209, 60, 60);
   animation: pulse-2 2s infinite;
-
 }
 
 @keyframes pulse-2 {
   0% {
     box-shadow: 0 0 0 0 rgba(227, 60, 60, 0.4);
-      background-color: rgba(227, 60, 60, 0.4);
+    background-color: rgba(227, 60, 60, 0.4);
   }
   70% {
     box-shadow: 0 0 0 20px rgba(227, 60, 60, 0);
@@ -134,8 +150,9 @@ nav {
 
 } */
 
+/* MAIN */
 .main {
-  margin: 73px 30px 30px;
+  margin: 47px 30px 30px;
 }
 
 article {
@@ -183,7 +200,7 @@ footer {
   bottom: 20px;
   left: 20px;
   transition: all 1s;
-  animation: pulse 3s infinite;
+  animation: pulse 2s infinite;
 }
 
 .footer-arrow:hover {

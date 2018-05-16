@@ -42,6 +42,7 @@ console.log(menuChange);
 window.onscroll = function () {
   if (window.pageYOffset >= menuChange) {
     menuUl.classList.add('header-small');
+
   } else {
     menuUl.classList.remove('header-small');
   }
