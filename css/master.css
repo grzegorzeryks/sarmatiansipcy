@@ -157,7 +157,7 @@ nav {
 }
 
 article {
-  border: 3px dashed rgb(244, 177, 177);
+  border: 3px dashed rgb(255, 99, 99);
   display: flex;
   padding: 20px 0;
   width: 100%;
@@ -186,7 +186,7 @@ footer {
   position: fixed;
   bottom: -100px;
   transition: all 1s;
-  display:flex;
+  display: flex;
 }
 
 .footer-arrow {
@@ -203,6 +203,10 @@ footer {
   left: 20px;
   transition: all 1s;
   animation: pulse 2s infinite;
+}
+
+.footer-menu  li a{
+  color: white;
 }
 
 .footer-arrow:hover {
